@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        h2{
+            text-align: center;
+        }
+        #div{
+            width: 1260px;
+        }
+
+        form{
+            position: relative;
+            margin: 50px auto;
+        }
+        .div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<h2>航班添加页面</h2>
+<div id="div">
+        <div class="div">
+            <label>航班编号</label>
+            <input type="text" name="number"/><br>
+        </div>
+
+        <div class="div">
+            <label for="s">起飞城市</label>
+            <select id="s">
+                <option>请选择起飞城市</option>
+            </select>
+            <label>起飞时间</label>
+            <input type="datetime-local"/>
+        </div>
+
+        <div class="div">
+            <label for="d">到达城市</label>
+            <select id="d">
+                <option>请选择到达城市</option>
+            </select>
+            <label>到达时间</label>
+            <input type="datetime-local"/>
+        </div>
+    <input type="button" value="添加" id="btn"/>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/add.js"></script>
+
+</body>
+</html>
